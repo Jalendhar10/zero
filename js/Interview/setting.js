@@ -4,9 +4,9 @@ jQuery(document).ready(function($){
 if (jQuery().quicksand) {
 
  	// Clone applications to get a second collection
-	var $data = $(".portfolio").clone();
+	var $data = $(".Interiew Q&A").clone();
 	
-	//NOTE: Only filter on the main portfolio page, not on the subcategory pages
+	//NOTE: Only filter on the main Interiew Q&A page, not on the subcategory pages
 	$('.filter li').click(function(e) {
 		$(".filter li").removeClass("active");	
 		// Use the last category class as the category to filter by. This means that multiple categories are not supported (yet)
@@ -17,12 +17,12 @@ if (jQuery().quicksand) {
 		} else {
 			var $filteredData = $data.find('.item-thumbs[data-type=' + filterClass + ']');
 		}
-		$(".portfolio").quicksand($filteredData, {
+		$(".Interiew Q&A").quicksand($filteredData, {
 			duration: 600,
 			adjustHeight: 'auto'
 		}, function () {
 		
-			// Portfolio fancybox
+			// Interiew Q&A fancybox
 		$(".fancybox").fancybox({				
 				padding : 0,
 				beforeShow: function () {
